@@ -1,4 +1,4 @@
-package com.auth.app.contrl;
+package com.auth.app.controller;
 
 
 import org.springframework.stereotype.Controller;
