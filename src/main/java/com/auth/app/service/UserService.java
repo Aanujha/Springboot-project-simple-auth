@@ -10,4 +10,5 @@ public interface UserService {
     void createUser(UserDto userDto);
     List<User> getUserList();
 
+    UserDto loginCheck(UserDto userDto);
 }

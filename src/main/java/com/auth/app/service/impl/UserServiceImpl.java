@@ -30,5 +30,10 @@ public class UserServiceImpl implements UserService {
         return userRepo.findAll();
     }
 
+    @Override
+    public UserDto loginCheck(UserDto userDto) {
+        return modelMapper.map(userRepo.checkLogin(userDto.getEmail()),UserDto.class);
+    }
+
 
 }
